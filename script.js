@@ -45,9 +45,7 @@ function makeGrid(squaresNumb) {
 
 
 function colorGrid() {
-    if (blackBtn.className.match('active')) {    
-    this.style.backgroundColor = "#000000";
-    } else if (rainbowBtn.className.match('active')) {
+    if (rainbowBtn.className.match('active')) {
         this.style.backgroundColor = getRandomColor();
     } else if (eraserBtn.className.match('active')) {
         this.style.backgroundColor = "#FFFFFF";

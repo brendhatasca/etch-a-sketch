@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/7a94e3df5c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Etch-A-Sketch (TOP)</title>
 </head>
@@ -13,21 +14,22 @@
         <h1>Etch-A-Sketch</h1>
     </header>
     <main>
-         <div class="grid-wrapper">
-            <div class="grid-container"></div>
-        </div>
 
         <div class="settings">
-            <div id="slide-container" style="border: 1px solid red;"> 
+
+            <input type="color" value="#000000" class="btn color-picker">
+            <button class="btn rainbow-pencil active"><i class="fa-solid fa-rainbow"></i> Rainbow</button>
+            <button class="btn eraser"><i class="fa-solid fa-eraser"></i> Eraser</button>
+            <button class="grid-eraser"><i class="fa-solid fa-hand-sparkles"></i> Clear Board</button>
+
+            <div id="slide-container"> 
                 <input type="range" min="1" max="50" value="16" class="slider" id="grid-range">
                 <div id="grid-size-display"> </div>
             </div>
+        </div>
 
-            <button class="btn black active">Black</button>
-            <input type="color" value="#000000" class="btn color-picker">
-            <button class="btn rainbow-pencil">Rainbow Pencil</button>
-            <button class="btn eraser">Eraser</button>
-            <button class="grid-eraser">Clear Board</button>
+        <div class="grid-wrapper">
+            <div class="grid-container"></div>
         </div>
     </main>
 </body>
