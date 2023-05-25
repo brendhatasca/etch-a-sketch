@@ -92,6 +92,10 @@ input[type='color']::-webkit-color-swatch {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
+input[type='color'].active::-webkit-color-swatch{
+border: 3px solid antiquewhite;
+}
+
 /* Slider styles*/
 
 #slide-container {

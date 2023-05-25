@@ -66,7 +66,7 @@ function getRandomColor() {
 
 function clearGrid() {
     clearSquares();
-    makeGrid(defaultSize);
+    makeGrid(slider.value);
 }
 
 function clearSquares() {
